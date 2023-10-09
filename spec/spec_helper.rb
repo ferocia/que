@@ -8,12 +8,6 @@ $VERBOSE = nil
 # in some spec runs.
 if ENV['USE_RAILS'] == 'true'
   require 'active_record'
-  require 'active_job'
-
-  ActiveJob::Base.queue_adapter = :que
-  ActiveJob::Base.logger = nil
-
-  # require 'que/active_job/extensions'
 end
 
 require 'que'
