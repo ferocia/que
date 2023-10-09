@@ -124,5 +124,4 @@ module Que
 end
 
 # Load Rails features as appropriate.
-require_relative 'que/rails/railtie'         if defined?(::Rails::Railtie)
-require_relative 'que/active_job/extensions' if defined?(::ActiveJob)
+require_relative 'que/rails/railtie' if defined?(::Rails::Railtie)
